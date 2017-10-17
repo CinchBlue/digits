@@ -1,3 +1,12 @@
 body {
-  padding-top: 61px;  /* Move body of page below navbar. */
+}
+
+.top-image {
+  height: 400px;
+  background: url('/images/bg.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#top-menu {
+  background-color: #543768;
 }
