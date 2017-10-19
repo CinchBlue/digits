@@ -5,31 +5,23 @@
     <table class="ui celled table">
       <thead>
         <tr>
-          <th>Galaxy Name</th>
-          <th>Personal Name</th>
-          <th>Planet Name</th>
-          <th>Universal Telecron Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Telephone</th>
+          <th>Email</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Andromeda</td>
-          <td>Andre Meda</td>
-          <td>KELT-1b</td>
-          <td>20453-1230582-808-DRE-MEDA</td>
-        </tr>
-        <tr>
-          <td>Milky Way</td>
-          <td>Robert Plagaeus</td>
-          <td>Earth</td>
-          <td>0-1-808-422-2222</td>
-        </tr>
-        <tr>
-          <td>N.A.</td>
-          <td>C'thasdfkz'asdfj'thun</td>
-          <td>Nibiru</td>
-          <td>256-256-808-OLD-GODS</td>
-        </tr>
+        {{#each contact in contactsList}}
+          <tr>
+            <td>{{contact.first}}</td>
+            <td>{{contact.last}}</td>
+            <td>{{contact.address}}</td>
+            <td>{{contact.telephone}}</td>
+            <td>{{contact.email}}</td>
+          </tr>
+        {{/each}}
       </tbody>
     </table>
 
