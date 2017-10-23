@@ -17,7 +17,7 @@ Template.Edit_Contact_Page.onCreated(function onCreated() {
 
 Template.Edit_Contact_Page.helpers({
   contactDataField(fieldName) {
-    const contactData = Contacts.findOne(FlowRouter.getParam('_id')) ;
+    const contactData = Contacts.findOne(FlowRouter.getParam('_id'));
     return contactData && contactData[fieldName];
   },
   errorClass() {
@@ -32,7 +32,7 @@ Template.Edit_Contact_Page.helpers({
 
 
 Template.Edit_Contact_Page.events({
-  'submit .contact-data-form'(event, instance) {
+  'submit .contact-data-form': function (event, instance) {
     event.preventDefault();
     // Get name (text field)
     const first = event.target.First.value;
@@ -41,7 +41,9 @@ Template.Edit_Contact_Page.events({
     const telephone = event.target.Telephone.value;
     const email = event.target.Email.value;
 
-    const updatedContactData = { first, last, address, telephone, email };
+    const updatedContactData = {
+      first, last, address, telephone, email,
+    };
     // Clear out any old validation errors.
     instance.context.reset();
     // Invoke clean so that newStudentData reflects what will be inserted.
