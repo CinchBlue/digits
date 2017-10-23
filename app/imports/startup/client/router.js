@@ -8,13 +8,6 @@ FlowRouter.route('/', {
   },
 });
 
-FlowRouter.route('/list', {
-  name: 'List_Stuff_Page',
-  action() {
-    BlazeLayout.render('App_Body', { main: 'List_Stuff_Page' });
-  },
-});
-
 FlowRouter.route('/add-contact', {
   name: 'Add_Contact_Page',
   action() {
@@ -26,20 +19,6 @@ FlowRouter.route('/edit-contact/:_id', {
   name: 'Edit_Contact_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Edit_Contact_Page' });
-  },
-});
-
-FlowRouter.route('/add', {
-  name: 'Add_Stuff_Page',
-  action() {
-    BlazeLayout.render('App_Body', { main: 'Add_Stuff_Page' });
-  },
-});
-
-FlowRouter.route('/stuff/:_id', {
-  name: 'Edit_Stuff_Page',
-  action() {
-    BlazeLayout.render('App_Body', { main: 'Edit_Stuff_Page' });
   },
 });
 

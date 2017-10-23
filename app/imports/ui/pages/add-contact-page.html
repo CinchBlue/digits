@@ -1,8 +1,8 @@
 <template name="Add_Contact_Page">
   <div style="padding-top: 20px" class="ui text container">
-    <h4 class="ui divided header">Add Contact</h4>
 
     <form class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Add Contact</h4>
       <div class="two fields">
         {{> Text_Form_Control label="First" required=true errorMessage=(fieldError "first")}}
         {{> Text_Form_Control label="Last" required=true errorMessage=(fieldError "last")}}

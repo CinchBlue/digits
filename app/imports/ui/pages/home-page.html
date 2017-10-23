@@ -20,6 +20,7 @@
             <td>{{contact.address}}</td>
             <td>{{contact.telephone}}</td>
             <td>{{contact.email}}</td>
+            <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
           </tr>
         {{/each}}
       </tbody>
