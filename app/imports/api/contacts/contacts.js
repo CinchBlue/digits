@@ -10,30 +10,30 @@ export const Contacts = new Mongo.Collection('Contacts');
  */
 export const ContactsSchema = new SimpleSchema({
   first: {
-    label: 'First Name',
+    label: 'first',
     type: String,
     optional: false,
     max: 80,
   },
   last: {
-    label: 'Last Name',
+    label: 'last',
     type: String,
     optional: false,
     max: 80,
   },
   telephone: {
-    label: 'Telephone',
+    label: 'telephone',
     type: String,
     optional: false,
     regEx: /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/
   },
   address: {
-    label: 'Address',
+    label: 'address',
     type: String,
     optional: false,
   },
   email: {
-    label: 'Email',
+    label: 'email',
     type: String,
     optional: false,
     regEx: SimpleSchema.RegEx.Email,
