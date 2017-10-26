@@ -13,7 +13,8 @@
           {{> Text_Form_Control label="Telephone" required=true value=(contactDataField 'telephone') errorMessage=(fieldError "telephone")}}
           {{> Text_Form_Control label="Email" required=true value=(contactDataField 'email') errorMessage=(fieldError "email")}}
         </div>
-        <button class="ui button" type="submit">Submit</button>
+        <button class="ui button" id="contact-data-form-edit" type="submit">Submit</button>
+        <button class="ui button" id="contact-data-form-delete" type="submit">Delete</button>
       </form>
     </div>
   {{/if}}

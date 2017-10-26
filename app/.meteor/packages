@@ -22,7 +22,6 @@ shell-server@0.2.4
 dynamic-import
 
 # Collection utilities
-aldeed:collection2
 
 # Form processing utilities
 aldeed:autoform
@@ -49,3 +48,4 @@ fabienb4:autoform-semantic-ui
 # For prototyping purposes, enable autopublish and insecure
 insecure@1.0.7
 
+aldeed:collection2-core
